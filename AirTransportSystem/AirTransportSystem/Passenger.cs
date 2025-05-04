@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Text.Json;
+
+//passenger
 namespace AirTransportSystem
 {
     class Passenger

@@ -1,0 +1,111 @@
+[
+  {
+    "Key": 1,
+    "FlightNumber": "1",
+    "Departure": {
+      "Key": 1,
+      "Code": "052",
+      "Name": "\u0422\u0438\u0440\u0442\u043E\u043F",
+      "City": "\u0422\u0438\u0440\u0430\u0441\u043F\u043E\u043B\u044C",
+      "Country": "\u041F\u0440\u0438\u0434\u043D\u0435\u0441\u0442\u0440\u043E\u0432\u044C\u0435"
+    },
+    "Destination": {
+      "Key": 2,
+      "Code": "098",
+      "Name": "\u0411\u043E\u0440\u0432\u043E\u0442",
+      "City": "\u0411\u0435\u043D\u0434\u0435\u0440\u044B",
+      "Country": "\u041F\u0440\u0438\u0434\u043D\u0435\u0441\u0442\u0440\u043E\u0432\u044C\u0435"
+    },
+    "DepartureTime": "2025-05-04T22:00:00",
+    "ArrivalTime": "2025-05-04T22:30:00",
+    "Airplane": {
+      "Key": 1,
+      "Name": "Boeing 700",
+      "Model": "Q15",
+      "RegistrationNumber": "015",
+      "Category": "Q",
+      "Capacity": 150
+    },
+    "Passengers": [
+      {
+        "Key": 1,
+        "FullName": "\u041B\u043E\u0437\u0438\u043D\u0441\u043A\u0438\u0439 \u0414\u0430\u043D\u0438\u0438\u043B \u041C\u0430\u043A\u0441\u0438\u043C\u043E\u0432\u0438\u0447",
+        "PassportNumber": "123412112384",
+        "ContactInfo": "37377876060"
+      },
+      {
+        "Key": 2,
+        "FullName": "\u0414\u0438\u0434\u0443\u0440 \u0414\u0430\u043D\u0438\u0438\u043B \u042E\u0440\u044C\u0435\u0432\u0438\u0447",
+        "PassportNumber": "123741762341",
+        "ContactInfo": "37381438134"
+      },
+      {
+        "Key": 3,
+        "FullName": "\u041C\u0430\u043A\u0430\u0440\u0435\u043D\u043A\u043E \u0414\u0430\u043D\u0438\u0438\u043B \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u0432\u0438\u0447",
+        "PassportNumber": "7485623412",
+        "ContactInfo": "373182672"
+      },
+      {
+        "Key": 4,
+        "FullName": null,
+        "PassportNumber": null,
+        "ContactInfo": null
+      },
+      {
+        "Key": 5,
+        "FullName": null,
+        "PassportNumber": null,
+        "ContactInfo": null
+      },
+      {
+        "Key": 6,
+        "FullName": null,
+        "PassportNumber": null,
+        "ContactInfo": null
+      }
+    ],
+    "Price": 1000,
+    "Landings": [],
+    "FreeSeats": 144
+  },
+  {
+    "Key": 2,
+    "FlightNumber": "2",
+    "Departure": {
+      "Key": 2,
+      "Code": "098",
+      "Name": "\u0411\u043E\u0440\u0432\u043E\u0442",
+      "City": "\u0411\u0435\u043D\u0434\u0435\u0440\u044B",
+      "Country": "\u041F\u0440\u0438\u0434\u043D\u0435\u0441\u0442\u0440\u043E\u0432\u044C\u0435"
+    },
+    "Destination": {
+      "Key": 3,
+      "Code": "007",
+      "Name": "\u0421\u0435\u0434\u044C\u043C\u043E\u0439",
+      "City": "\u0421\u0435\u043C\u044C",
+      "Country": "\u0421\u0435\u043C\u044C\u0431\u0443\u0440\u0433"
+    },
+    "DepartureTime": "2025-05-10T12:00:00",
+    "ArrivalTime": "2025-05-10T17:00:00",
+    "Airplane": {
+      "Key": 3,
+      "Name": "Boeing 702",
+      "Model": "BJ03",
+      "RegistrationNumber": "003",
+      "Category": "BJ",
+      "Capacity": 1500
+    },
+    "Passengers": [],
+    "Price": 5599,
+    "Landings": [
+      {
+        "Key": 1,
+        "Code": "052",
+        "Name": "\u0422\u0438\u0440\u0442\u043E\u043F",
+        "City": "\u0422\u0438\u0440\u0430\u0441\u043F\u043E\u043B\u044C",
+        "Country": "\u041F\u0440\u0438\u0434\u043D\u0435\u0441\u0442\u0440\u043E\u0432\u044C\u0435"
+      }
+    ],
+    "FreeSeats": 1500
+  }
+]
