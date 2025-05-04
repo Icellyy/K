@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.IO;
+using System.Text.Json;
 namespace AirTransportSystem
 {
     class Flight
     {
+        public Flight() {}
         public int Key { get; set; } // Добавлено
         public string FlightNumber { get; set; }
         public Airport Departure { get; set; }

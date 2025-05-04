@@ -1,9 +1,11 @@
 ﻿using System;
-
+using System.IO;
+using System.Text.Json;
 namespace AirTransportSystem
 {
     class Passenger
     {
+        public Passenger() {}
         public int Key { get; set; }
         public string FullName { get; set; }
         public string PassportNumber { get; set; }

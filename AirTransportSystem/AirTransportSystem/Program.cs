@@ -1,20 +1,74 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
+using System.Text.Json;
 
 namespace AirTransportSystem
 {
     class Program
     {
-        static List<Flight> flights = new List<Flight>();
-        static List<Airplane> airplanes = new List<Airplane>();
-        static List<Airport> airports = new List<Airport>();
-        static List<Ticket> tickets = new List<Ticket>();
+        private static readonly string DataDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Data");
+        private static void EnsureDataDirectoryExists()
+        {
+            if (!Directory.Exists(DataDirectory))
+            {
+                Directory.CreateDirectory(DataDirectory);
+            }
+        }
+        
+        static List<Flight> flights = LoadData<List<Flight>>("flights.json") ?? new List<Flight>();
+        static List<Airplane> airplanes = LoadData<List<Airplane>>("airplanes.json") ?? new List<Airplane>();
+        static List<Airport> airports = LoadData<List<Airport>>("airports.json") ?? new List<Airport>();
+        static List<Ticket> tickets = LoadData<List<Ticket>>("tickets.json") ?? new List<Ticket>();
         static int nextFlightKey = 1;
         static int nextTicketKey = 1;
+        static void SaveAllData()
+        {
+            EnsureDataDirectoryExists();
+            SaveData("flights.json", flights);
+            SaveData("airplanes.json", airplanes);
+            SaveData("airports.json", airports);
+            SaveData("tickets.json", tickets);
+        }
 
+        static void SaveData<T>(string fileName, T data)
+        {
+            try
+            {
+                string path = Path.Combine(DataDirectory, fileName);
+                var options = new JsonSerializerOptions { WriteIndented = true };
+                File.WriteAllText(path, JsonSerializer.Serialize(data, options));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка сохранения: {ex.Message}");
+            }
+        }
+
+        static T LoadData<T>(string fileName) where T : new()
+        {
+            try
+            {
+                string path = Path.Combine(DataDirectory, fileName);
+                if (!File.Exists(path)) return new T();
+                return JsonSerializer.Deserialize<T>(File.ReadAllText(path));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка загрузки: {ex.Message}");
+                return new T();
+            }
+        }
         static void Main()
         {
+            {
+                SaveData("flights.txt", flights);
+                SaveData("airplanes.txt", airplanes);
+                SaveData("airports.txt", airports);
+                SaveData("tickets.txt", tickets);
+            };
+            
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.Title = "✈ Система управления авиаперевозками";
 
@@ -114,6 +168,7 @@ namespace AirTransportSystem
             }
 
             flights.Add(flight);
+            SaveAllData();
             ShowSuccess("=== Рейс добавлен! ===");
         }
 
@@ -140,6 +195,7 @@ namespace AirTransportSystem
 
             tickets.Add(ticket);
             flight.Passengers.Add(new Passenger { Key = flight.Passengers.Count + 1 });
+            SaveAllData();
             ShowSuccess($"=== Билет #{ticket.Key} продан! ===");
         }
 
@@ -253,6 +309,7 @@ namespace AirTransportSystem
                 airplane.Capacity = capacity;
 
             airplanes.Add(airplane);
+            SaveAllData();
             ShowSuccess("=== Самолет добавлен! ===");
         }
 
@@ -278,6 +335,7 @@ namespace AirTransportSystem
             airport.Country = Console.ReadLine();
 
             airports.Add(airport);
+            SaveAllData();
             ShowSuccess("=== Аэропорт добавлен! ===");
         }
 
@@ -354,6 +412,7 @@ namespace AirTransportSystem
                     flight.Price = newPrice;
                     break;
             }
+            SaveAllData();
             ShowSuccess("=== Рейс обновлен! ===");
         }
 
@@ -366,6 +425,7 @@ namespace AirTransportSystem
             if (flight != null)
             {
                 flights.Remove(flight);
+                SaveAllData();
                 ShowSuccess("=== Рейс удален! ===");
             }
             else
@@ -407,6 +467,7 @@ namespace AirTransportSystem
             passenger.ContactInfo = Console.ReadLine();
 
             flight.Passengers.Add(passenger);
+            SaveAllData();
             ShowSuccess("=== Пассажир добавлен! ===");
         }
 

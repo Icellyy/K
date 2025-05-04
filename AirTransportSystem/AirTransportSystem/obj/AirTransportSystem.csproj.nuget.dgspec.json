@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\C#\\AirTransportSystem\\AirTransportSystem\\AirTransportSystem.csproj": {}
+    "C:\\Users\\33005\\RiderProjects\\K\\AirTransportSystem\\AirTransportSystem\\AirTransportSystem.csproj": {}
   },
   "projects": {
-    "C:\\C#\\AirTransportSystem\\AirTransportSystem\\AirTransportSystem.csproj": {
+    "C:\\Users\\33005\\RiderProjects\\K\\AirTransportSystem\\AirTransportSystem\\AirTransportSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\C#\\AirTransportSystem\\AirTransportSystem\\AirTransportSystem.csproj",
+        "projectUniqueName": "C:\\Users\\33005\\RiderProjects\\K\\AirTransportSystem\\AirTransportSystem\\AirTransportSystem.csproj",
         "projectName": "AirTransportSystem",
-        "projectPath": "C:\\C#\\AirTransportSystem\\AirTransportSystem\\AirTransportSystem.csproj",
+        "projectPath": "C:\\Users\\33005\\RiderProjects\\K\\AirTransportSystem\\AirTransportSystem\\AirTransportSystem.csproj",
         "packagesPath": "C:\\Users\\33005\\.nuget\\packages\\",
-        "outputPath": "C:\\C#\\AirTransportSystem\\AirTransportSystem\\obj\\",
+        "outputPath": "C:\\Users\\33005\\RiderProjects\\K\\AirTransportSystem\\AirTransportSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
