@@ -1,9 +1,13 @@
 ﻿using System;
+using System.IO;
+using System.Text.Json;
 
+//airplane
 namespace AirTransportSystem
 {
     class Airplane
     {
+        public Airplane() {}
         public int Key { get; set; } // Добавлено
         public string Name { get; set; } // Добавлено
         public string Model { get; set; }

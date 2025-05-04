@@ -1,0 +1,26 @@
+[
+  {
+    "Key": 1,
+    "Name": "Boeing 700",
+    "Model": "Q15",
+    "RegistrationNumber": "015",
+    "Category": "Q",
+    "Capacity": 150
+  },
+  {
+    "Key": 2,
+    "Name": "Boeing 701",
+    "Model": "W52",
+    "RegistrationNumber": "052",
+    "Category": "W",
+    "Capacity": 52
+  },
+  {
+    "Key": 3,
+    "Name": "Boeing 702",
+    "Model": "BJ03",
+    "RegistrationNumber": "003",
+    "Category": "BJ",
+    "Capacity": 1500
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "Key": 1,
+    "CashRegisterNumber": 2,
+    "FlightNumber": "1",
+    "SaleDate": "2025-05-04T00:00:00+03:00",
+    "SaleTime": "2025-05-04T19:28:04.8813635+03:00"
+  },
+  {
+    "Key": 2,
+    "CashRegisterNumber": 6,
+    "FlightNumber": "1",
+    "SaleDate": "2025-05-04T00:00:00+03:00",
+    "SaleTime": "2025-05-04T19:28:07.9391715+03:00"
+  },
+  {
+    "Key": 3,
+    "CashRegisterNumber": 7,
+    "FlightNumber": "1",
+    "SaleDate": "2025-05-04T00:00:00+03:00",
+    "SaleTime": "2025-05-04T19:28:11.0485209+03:00"
+  }
+]

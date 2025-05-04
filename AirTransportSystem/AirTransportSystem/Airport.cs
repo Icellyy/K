@@ -1,9 +1,13 @@
 ﻿using System;
+using System.IO;
+using System.Text.Json;
 
+//airport
 namespace AirTransportSystem
 {
     class Airport
     {
+        public Airport() {}
         public int Key { get; set; }
         public string Code { get; set; }
         public string Name { get; set; }

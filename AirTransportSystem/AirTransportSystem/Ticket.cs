@@ -1,9 +1,13 @@
 ﻿using System;
+using System.IO;
+using System.Text.Json;
 
+//ticket
 namespace AirTransportSystem
 {
     class Ticket
     {
+        public Ticket() {}
         public int Key { get; set; }
         public int CashRegisterNumber { get; set; }
         public string FlightNumber { get; set; }
