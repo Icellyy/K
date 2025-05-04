@@ -1,0 +1,14 @@
+C:\C#\AirTransportSystem\AirTransportSystem\bin\Debug\net8.0\AirTransportSystem.exe
+C:\C#\AirTransportSystem\AirTransportSystem\bin\Debug\net8.0\AirTransportSystem.deps.json
+C:\C#\AirTransportSystem\AirTransportSystem\bin\Debug\net8.0\AirTransportSystem.runtimeconfig.json
+C:\C#\AirTransportSystem\AirTransportSystem\bin\Debug\net8.0\AirTransportSystem.dll
+C:\C#\AirTransportSystem\AirTransportSystem\bin\Debug\net8.0\AirTransportSystem.pdb
+C:\C#\AirTransportSystem\AirTransportSystem\obj\Debug\net8.0\AirTransportSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\AirTransportSystem\AirTransportSystem\obj\Debug\net8.0\AirTransportSystem.AssemblyInfoInputs.cache
+C:\C#\AirTransportSystem\AirTransportSystem\obj\Debug\net8.0\AirTransportSystem.AssemblyInfo.cs
+C:\C#\AirTransportSystem\AirTransportSystem\obj\Debug\net8.0\AirTransportSystem.csproj.CoreCompileInputs.cache
+C:\C#\AirTransportSystem\AirTransportSystem\obj\Debug\net8.0\AirTransportSystem.dll
+C:\C#\AirTransportSystem\AirTransportSystem\obj\Debug\net8.0\refint\AirTransportSystem.dll
+C:\C#\AirTransportSystem\AirTransportSystem\obj\Debug\net8.0\AirTransportSystem.pdb
+C:\C#\AirTransportSystem\AirTransportSystem\obj\Debug\net8.0\AirTransportSystem.genruntimeconfig.cache
+C:\C#\AirTransportSystem\AirTransportSystem\obj\Debug\net8.0\ref\AirTransportSystem.dll
